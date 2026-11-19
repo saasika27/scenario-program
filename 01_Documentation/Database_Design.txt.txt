@@ -1,0 +1,132 @@
+EXAMINSIGHT – DATABASE DESIGN
+
+1. DATABASE OVERVIEW
+
+Database Name: ExamInsightDB
+
+ExamInsight uses a MySQL relational database to store student, faculty, examination, question, registration, response and result information.
+
+2. DATABASE TABLES
+
+1. STUDENT
+Purpose: Stores student information.
+
+Columns:
+- student_id – Primary Key
+- name
+- department
+- year
+- email
+- phone
+- password
+
+2. FACULTY
+Purpose: Stores faculty information.
+
+Columns:
+- faculty_id – Primary Key
+- faculty_name
+- department
+- email
+- password
+
+3. EXAMINATION
+Purpose: Stores examination details.
+
+Columns:
+- exam_id – Primary Key
+- subject
+- exam_date
+- duration
+- max_marks
+- exam_type
+
+4. QUESTION
+Purpose: Stores examination questions and multiple-choice options.
+
+Columns:
+- question_id – Primary Key
+- exam_id – Foreign Key
+- question_text
+- question_type
+- option_a
+- option_b
+- option_c
+- option_d
+- correct_answer
+- marks
+
+5. REGISTRATION
+Purpose: Maintains student examination registrations.
+
+Columns:
+- registration_id – Primary Key
+- student_id – Foreign Key
+- exam_id – Foreign Key
+- registration_date
+- status
+
+6. STUDENT_RESPONSE
+Purpose: Stores answers submitted by students.
+
+Columns:
+- response_id – Primary Key
+- registration_id – Foreign Key
+- question_id – Foreign Key
+- answer
+- marks_awarded
+
+7. RESULT
+Purpose: Stores examination results.
+
+Columns:
+- result_id – Primary Key
+- registration_id – Unique Key and Foreign Key
+- total_marks
+- percentage
+- grade
+- result_status
+
+3. TABLE RELATIONSHIPS
+
+- Student (1) to Registration (Many)
+- Examination (1) to Registration (Many)
+- Examination (1) to Question (Many)
+- Registration (1) to Student_Response (Many)
+- Question (1) to Student_Response (Many)
+- Registration (1) to Result (Zero or One)
+
+4. PRIMARY KEYS
+
+Primary keys uniquely identify records in each database table.
+
+- Student: student_id
+- Faculty: faculty_id
+- Examination: exam_id
+- Question: question_id
+- Registration: registration_id
+- Student_Response: response_id
+- Result: result_id
+
+5. FOREIGN KEYS
+
+Foreign keys establish relationships between related tables.
+
+- Question.exam_id references Examination.exam_id
+- Registration.student_id references Student.student_id
+- Registration.exam_id references Examination.exam_id
+- Student_Response.registration_id references Registration.registration_id
+- Student_Response.question_id references Question.question_id
+- Result.registration_id references Registration.registration_id
+
+6. DATABASE ADVANTAGES
+
+- Organizes examination information.
+- Maintains relationships between records.
+- Stores student responses and results.
+- Supports result retrieval and performance analysis.
+- Reduces repeated manual record management.
+
+7. CONCLUSION
+
+The ExamInsight database provides a structured way to store and retrieve examination-related information using MySQL relational tables and foreign-key relationships.

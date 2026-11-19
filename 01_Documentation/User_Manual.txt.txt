@@ -1,0 +1,105 @@
+EXAMINSIGHT – USER MANUAL
+
+1. INTRODUCTION
+
+This user manual explains how to use the ExamInsight Online Examination Management System.
+
+2. STARTING THE APPLICATION
+
+1. Ensure MySQL Server is running.
+2. Make sure the ExamInsightDB database is available.
+3. Configure the database connection in DBConnection.java.
+4. Compile and run the Java application.
+5. The ExamInsight main menu will appear.
+
+3. MAIN MENU
+
+The application provides three options:
+
+1. Student Login
+2. Faculty Login
+3. Exit
+
+Select the required option.
+
+4. STUDENT LOGIN
+
+1. Select Student Login.
+2. Enter the Student ID.
+3. After successful login, the Student Dashboard will appear.
+
+STUDENT DASHBOARD OPTIONS
+
+1. View Available Exams
+   Displays available examinations.
+
+2. View Exam Results
+   Displays the student's examination results.
+
+3. View Performance
+   Displays examination performance information.
+
+4. Start Exam
+   Displays registered examinations available to attend.
+   Select an examination and answer the MCQ questions.
+   Submit answers to complete the examination.
+
+5. Logout
+   Returns to the main menu.
+
+5. FACULTY LOGIN
+
+1. Select Faculty Login.
+2. Enter Faculty ID and password.
+3. After successful login, the Faculty Dashboard will appear.
+
+FACULTY DASHBOARD OPTIONS
+
+1. View All Exams
+   Displays examination information.
+
+2. Add New Questions
+   Select an exam and enter the question, four options, correct answer and marks.
+
+3. View Student Results
+   Displays student examination results.
+
+4. View Student Performance
+   Displays student performance information.
+
+5. Logout
+   Returns to the main menu.
+
+6. RESULT GENERATION
+
+After a student completes an examination, the system evaluates the submitted answers.
+
+The application calculates:
+- Total Marks
+- Percentage
+- Grade
+- PASS / FAIL Status
+
+The generated result is stored in the MySQL database.
+
+7. EXITING THE APPLICATION
+
+Select Exit from the main menu to close the application.
+
+8. TROUBLESHOOTING
+
+Database connection failed:
+- Check whether MySQL Server is running.
+- Verify database name, username and password.
+- Check the MySQL Connector/J classpath.
+
+Login failed:
+- Verify the entered login details.
+- Check whether the student or faculty record exists in the database.
+
+No registered examinations:
+- Check the student's examination registration details.
+
+9. CONCLUSION
+
+This manual provides basic instructions for using the ExamInsight system as a student or faculty member.

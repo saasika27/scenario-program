@@ -1,0 +1,97 @@
+EXAMINSIGHT – ONLINE EXAMINATION MANAGEMENT SYSTEM
+
+1. PROJECT INTRODUCTION
+
+ExamInsight is a Java-based Online Examination Management System developed using Java, JDBC and MySQL.
+
+The application provides separate login facilities for students and faculty members. Students can view available examinations, attend multiple-choice questions, view examination results and check their performance.
+
+Faculty members can view examinations, add questions, view student results and monitor student performance.
+
+2. PROJECT OBJECTIVES
+
+- To develop a Java-based examination management application.
+- To provide separate login facilities for students and faculty.
+- To allow students to attend registered examinations.
+- To evaluate submitted answers automatically.
+- To calculate examination marks and percentages.
+- To store examination results in a MySQL database.
+- To help faculty monitor student examination performance.
+
+3. EXISTING SYSTEM
+
+In a traditional examination process, examinations, answer evaluation and result preparation may require considerable manual work.
+
+Manual result preparation can also make performance monitoring difficult.
+
+4. PROPOSED SYSTEM
+
+ExamInsight provides a computerized examination management application using Java and MySQL.
+
+The system supports student and faculty operations through separate menus. It evaluates multiple-choice answers automatically and stores examination results in the database.
+
+5. PROJECT MODULES
+
+A. STUDENT MODULE
+- Student Login
+- View Available Exams
+- View Exam Results
+- View Performance
+- Start Exam
+- Logout
+
+B. FACULTY MODULE
+- Faculty Login
+- View All Exams
+- Add New Questions
+- View Student Results
+- View Student Performance
+- Logout
+
+C. EXAMINATION MODULE
+- Display examination questions.
+- Display four multiple-choice options.
+- Accept student answers.
+- Evaluate answers automatically.
+- Calculate total marks and percentage.
+- Generate grade and pass/fail status.
+
+D. DATABASE MODULE
+- Store student information.
+- Store faculty information.
+- Store examination details.
+- Store questions and answers.
+- Maintain examination registrations.
+- Store student responses.
+- Store examination results.
+
+6. TECHNOLOGIES USED
+
+Programming Language: Java
+
+Database: MySQL
+
+Connectivity: JDBC
+
+Database Management Tool: MySQL Workbench
+
+7. DATABASE TABLES
+
+The project uses seven tables:
+
+1. Student
+2. Faculty
+3. Examination
+4. Question
+5. Registration
+6. Student_Response
+7. Result
+
+8. EXPECTED OUTCOME
+
+The system provides an organized way to manage online examinations, automatically evaluate student answers, generate results and monitor student performance.
+
+9. CONCLUSION
+
+ExamInsight demonstrates how Java programming and MySQL database connectivity can be used to develop an Online Examination Management System. It simplifies examination-related operations for students and faculty members.
+ss

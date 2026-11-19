@@ -1,0 +1,51 @@
+EXAMINSIGHT - TEST CASES
+
+1. Student Login
+   Input: Valid Student ID
+   Expected: Student dashboard should open.
+   Result: PASS
+
+2. Invalid Student Login
+   Input: Invalid Student ID
+   Expected: Error message should appear.
+   Result: PASS
+
+3. Faculty Login
+   Input: Valid Faculty ID and Password
+   Expected: Faculty dashboard should open.
+   Result: PASS
+
+4. View Available Exams
+   Input: Student selects View Available Exams.
+   Expected: Available exams should be displayed.
+   Result: PASS
+
+5. Add New Question
+   Input: Valid exam ID and MCQ details.
+   Expected: Question should be saved in database.
+   Result: PASS
+
+6. Start Examination
+   Input: Student selects a registered exam.
+   Expected: Questions should be displayed.
+   Result: PASS
+
+7. Submit Examination
+   Input: Student answers MCQ questions.
+   Expected: Answers should be evaluated and result generated.
+   Result: PASS
+
+8. View Results
+   Input: Student selects View Exam Results.
+   Expected: Exam marks, percentage and grade should appear.
+   Result: PASS
+
+9. View Performance
+   Input: Student selects View Performance.
+   Expected: Performance details should be displayed.
+   Result: PASS
+
+10. Logout
+    Input: Student or Faculty selects Logout.
+    Expected: User should return to the main menu.
+    Result: PASS

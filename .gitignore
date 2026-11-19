@@ -1,0 +1,4 @@
+*.class
+.env
+*.log
+05_Database/Dump20261116.sql

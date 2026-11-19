@@ -1,0 +1,48 @@
+EXAMINSIGHT – SYSTEM REQUIREMENTS
+
+1. HARDWARE REQUIREMENTS
+
+- Processor: Intel Core i3 or equivalent
+- RAM: Minimum 4 GB
+- Hard Disk: Minimum 500 MB free space for project files and tools
+- Keyboard and Mouse
+- Monitor
+
+2. SOFTWARE REQUIREMENTS
+
+- Operating System: Windows 10 / Windows 11
+- Programming Language: Java
+- Java Development Kit (JDK): JDK 17 or later
+- Database: MySQL Server
+- Database Tool: MySQL Workbench
+- Database Connectivity: MySQL Connector/J
+- Code Editor: Visual Studio Code or any Java-supported IDE
+- Command Prompt for compiling and executing Java programs
+
+3. DATABASE REQUIREMENTS
+
+Database Name: ExamInsightDB
+
+Database Tables:
+1. Student
+2. Faculty
+3. Examination
+4. Question
+5. Registration
+6. Student_Response
+7. Result
+
+4. CONFIGURATION REQUIREMENTS
+
+- MySQL Server must be running.
+- The ExamInsightDB database must be created and imported.
+- MySQL username and password must be configured in DBConnection.java.
+- MySQL Connector/J must be available in the Java classpath.
+
+5. NETWORK REQUIREMENTS
+
+An internet connection is not required for the basic local Java and MySQL application after the required software and database are installed.
+
+6. SECURITY NOTE
+
+Do not publish real database credentials or passwords in a public GitHub repository.

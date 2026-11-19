@@ -1,0 +1,49 @@
+EXAMINSIGHT – MODULE DESCRIPTION
+
+1. STUDENT MODULE
+
+The Student Module allows students to access the examination system using their student ID.
+
+Main Functions:
+- Student Login: Allows students to log in using their student ID.
+- View Available Exams: Displays examinations available for the student.
+- View Exam Results: Displays previously generated examination results.
+- View Performance: Shows student examination performance.
+- Start Exam: Allows students to attend registered examinations and answer MCQ questions.
+- Logout: Allows students to exit their dashboard.
+
+2. FACULTY MODULE
+
+The Faculty Module provides examination-related operations for faculty members.
+
+Main Functions:
+- Faculty Login: Allows faculty members to log in using their faculty ID and password.
+- View All Exams: Displays available examination details.
+- Add New Questions: Allows faculty to add MCQ questions and their options.
+- View Student Results: Displays student examination results.
+- View Student Performance: Helps faculty monitor student performance.
+- Logout: Allows faculty to exit their dashboard.
+
+3. EXAMINATION MODULE
+
+The Examination Module manages the examination process.
+
+Main Functions:
+- Displays questions and four answer options.
+- Accepts answers selected by students.
+- Compares submitted answers with correct answers.
+- Calculates marks automatically.
+- Calculates percentage and assigns a grade.
+- Generates PASS or FAIL status.
+- Stores examination results.
+
+4. DATABASE MODULE
+
+The Database Module uses MySQL to store and manage examination information.
+
+Tables Used:
+- Student: Stores student details.
+- Faculty: Stores faculty details.
+- Examination: Stores examination information.
+- Question: Stores examination questions and answers.
+- Registration: Stores student examination registration

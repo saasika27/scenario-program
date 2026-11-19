@@ -1,0 +1,32 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample student performance data
+data = {
+    "Student_Name": ["Arun", "Bala", "Charan", "Divya", "Ezhil"],
+    "Java": [85, 72, 90, 65, 88],
+    "DBMS": [78, 88, 92, 75, 84],
+    "Python": [90, 80, 85, 70, 95]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Calculate total and average marks
+df["Total"] = df[["Java", "DBMS", "Python"]].sum(axis=1)
+df["Average"] = df[["Java", "DBMS", "Python"]].mean(axis=1)
+
+print("STUDENT PERFORMANCE ANALYSIS")
+print(df)
+
+# Display students with average above 80
+print("\nStudents with average above 80:")
+print(df[df["Average"] > 80])
+
+# Create performance chart
+plt.bar(df["Student_Name"], df["Average"])
+plt.xlabel("Student Name")
+plt.ylabel("Average Marks")
+plt.title("Student Performance Analysis")
+plt.savefig("student_performance.png")
+plt.show()
