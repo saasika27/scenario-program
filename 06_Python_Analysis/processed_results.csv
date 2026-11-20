@@ -1,0 +1,8 @@
+student_id,name,subject,total_marks,percentage,grade,result_status,performance
+101,Arun,Java,25.0,100.0,O,PASS,Excellent
+102,Bala,Java,25.0,83.33,A+,PASS,Good
+103,Cathy,Java,20.0,66.67,B+,PASS,Average
+104,Divya,Java,20.0,66.67,B+,PASS,Average
+105,Ezhil,Java,20.0,66.67,B+,PASS,Average
+101,Arun,DBMS,5.0,50.0,C,PASS,Average
+101,Arun,Python,10.0,100.0,O,PASS,Excellent

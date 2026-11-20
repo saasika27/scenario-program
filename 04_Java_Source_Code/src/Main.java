@@ -10,12 +10,13 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("\n===== EXAMINSIGHT =====");
-        System.out.println("1. Student Login");
-        System.out.println("2. Faculty Login");
-        System.out.println("3. Student Registration");
-        System.out.println("4. Faculty Registration");
-        System.out.println("5. Exit");
+       System.out.println("\n===== EXAMINSIGHT =====");
+System.out.println("1. Student Login");
+System.out.println("2. Faculty Login");
+System.out.println("3. Student Registration");
+System.out.println("4. Faculty Registration");
+System.out.println("5. Python Analysis");
+System.out.println("6. Exit");
 
         System.out.print("Enter your choice: ");
         int loginChoice = sc.nextInt();
@@ -31,13 +32,36 @@ else if (loginChoice == 3) {
     return;
 }
 
-    else if (loginChoice == 4) {
-    facultyRegistration(sc);
-    sc.close();
-    return;
 
+else if (loginChoice == 4) {
+    facultyRegistration(sc);
 }
 else if (loginChoice == 5) {
+    System.out.println("Opening Python Analysis...");
+
+    try {
+        ProcessBuilder pb = new ProcessBuilder(
+            "python",
+            "06_Python_Analysis\\main.py"
+        );
+
+        pb.inheritIO();
+
+        Process process = pb.start();
+        int exitCode = process.waitFor();
+
+        if (exitCode == 0) {
+            System.out.println("Python Analysis Completed!");
+        } else {
+            System.out.println("Python Analysis Failed!");
+        }
+
+    } catch (Exception e) {
+        System.out.println("Error running Python Analysis!");
+        e.printStackTrace();
+    }
+}
+else if (loginChoice == 6) {
     System.out.println("Thank you for using ExamInsight!");
     sc.close();
     return;

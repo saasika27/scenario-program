@@ -1,4 +1,5 @@
 
+import matplotlib.pyplot as plt
 import mysql.connector
 import pandas as pd
 
@@ -42,3 +43,32 @@ conn.close()
 
 print("\nData retrieved successfully!")
 print("Student results saved to student_results.csv")
+
+# 1. Student Marks Bar Graph
+plt.figure(figsize=(10, 5))
+
+plt.bar(df["student_name"], df["total_marks"])
+
+plt.title("Student Marks Analysis")
+plt.xlabel("Student Name")
+plt.ylabel("Total Marks")
+
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+
+
+# 2. Performance Pie Chart
+performance_count = df["performance"].value_counts()
+
+plt.figure(figsize=(7, 7))
+
+plt.pie(
+    performance_count,
+    labels=performance_count.index,
+    autopct="%1.1f%%",
+    startangle=90
+)
+
+plt.title("Student Performance Analysis")
+plt.show()

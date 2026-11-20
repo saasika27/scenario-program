@@ -1,0 +1,38 @@
+Normalization is the process of organizing database tables to reduce data redundancy and improve data consistency.
+1NF – First Normal Form
+- Each column must contain only atomic (single) values.
+- Each row must be unique.
+- No repeating groups or multiple values in a single cell.
+ExamInsight Example:
+student_id	name	subject
+101	Arun	Java
+101	Arun	DBMS
+102	Bala	Java
+
+Each subject is stored as a separate row.
+2NF – Second Normal Form
+- Table must satisfy 1NF.
+- No partial dependency.
+- Every non-key attribute must depend on the whole candidate key.
+Example:
+
+Separate student details and examination details into different tables instead of repeating student information in every exam record.
+- Student table: student_id, name, department.
+- Examination table: exam_id, subject, exam_date.
+- Registration table: registration_id, student_id, exam_id.
+3NF – Third Normal Form
+- Table must satisfy 2NF.
+- No transitive dependency.
+- Non-key attributes must depend only on the primary key.
+Example:
+
+Student details are stored in the Student table, and exam results are stored in the Result table.
+- Student: student_id, name, department.
+- Result: result_id, student_id, exam_id, total_marks, percentage, grade.
+Advantages of Normalization
+1. Reduces duplicate data.
+2. Improves data consistency.
+3. Avoids insertion anomalies.
+4. Avoids update anomalies.
+5. Avoids deletion anomalies.
+6. Improves database organization.
